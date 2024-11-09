@@ -609,12 +609,20 @@ video {
   margin-bottom: 3rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .box-border {
@@ -1057,6 +1065,10 @@ video {
 }
 
 @media (min-width: 900px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1081,6 +1093,10 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:self-auto {
+    align-self: auto;
   }
 
   .md\:bg-green-400 {
