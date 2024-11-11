@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body class="block font-[Poppins]">
-    <div class=" flex m-8 justify-evenly flex-wrap">
+<body class="block font-[Poppins] bg-slate-200">
+    <div class=" flex justify-evenly flex-wrap bg-slate-200">
 
-        <div class="bg-indigo-200 p-2 rounded-lg flex flex-col space-y-2">
+        <div class="bg-indigo-200 p-2 mt-4 rounded-lg flex flex-col space-y-2 shadow-slate-500 shadow-lg">
             <img src="https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="doctor" class="h-56 w-52 rounded-md">
 
             <div class="flex flex-col space-y-2 justify-center items-center">
@@ -24,7 +24,7 @@
             </div>
        </div>
 
-        <div class="bg-indigo-200 p-2 rounded-lg flex flex-col space-y-2">
+        <div class="bg-indigo-200 p-2 mt-4 rounded-lg flex flex-col space-y-2 shadow-slate-500 shadow-lg">
             <img src="https://images.pexels.com/photos/5407249/pexels-photo-5407249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="doctor" class="h-56 w-52 rounded-md">
 
             <div class="flex flex-col space-y-3 justify-center items-center">
@@ -36,7 +36,7 @@
             </div>
        </div>       
 
-        <div class="bg-indigo-200 p-2 rounded-lg flex flex-col space-y-2">
+        <div class="bg-indigo-200 p-2 mt-4 rounded-lg flex flex-col space-y-2 shadow-slate-500 shadow-lg">
             <img src="https://images.pexels.com/photos/6749765/pexels-photo-6749765.jpeg" alt="doctor" class="h-56 w-52 rounded-md">
 
             <div class="flex flex-col space-y-3 justify-center items-center">
@@ -48,7 +48,7 @@
             </div>
        </div>
        
-        <div class="bg-indigo-200 p-2 rounded-lg flex flex-col space-y-2">
+        <div class="bg-indigo-200 p-2 mt-4 rounded-lg flex flex-col space-y-2 shadow-slate-500 shadow-lg">
             <img src="https://images.pexels.com/photos/5452200/pexels-photo-5452200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="doctor" class="h-56 w-52 rounded-md">
 
             <div class="flex flex-col space-y-3 justify-center items-center">
@@ -65,26 +65,33 @@
 
 
     <!-- paitaint details from -->
-    <div class="flex justify-center items-center ">
-        <form action="" class="bg-indigo-300 flex flex-col px-10 py-5 gap-4  rounded-lg">
+    <div class="flex justify-center items-center mt-10 ">
+        <form action="" class="bg-white flex flex-col px-10 py-5 gap-4 rounded-lg  shadow-slate-600 shadow-lg ">
             <p class="text-black self-center font-bold text-xl">Enter Paitient Details</p>
 
             <div class="flex gap-10">
                 <div class="flex flex-col space-y-5">
-                    <input type="text" placeholder="Full name" class="px-12 py-2 rounded-full">
-                    <input type="text" placeholder="Date of birth" class="px-12 py-2 rounded-full">
-                    <input type="text" placeholder="Mobile Number" maxlength="10" class="px-12 py-2 rounded-full">
+                    <input type="text" placeholder="Full name" class="px-12 py-2 rounded-lg border-2 border-slate-600 ">
+                    <input type="text" placeholder="Date for birth" class="px-12 py-2 rounded-lg border-2 border-slate-600">
+                    <input type="text" placeholder="Mobile Number" class="px-12 py-2 rounded-lg border-2 border-slate-600">
     
                 </div>
                 
                 <div class="flex flex-col space-y-4">
-                    <input type="text" placeholder="Address" class="px-12 py-2 rounded-full">
-                    <select name="" id="" class="px-12 py-2 rounded-full">
+                    <select name="" id="" class="px-12 py-2 rounded-lg border-2 border-slate-600">
+                        <option value="" disabled="" selected="">Select Date</option>
+                        <option value="">13 Nov</option>
+                        <option value="">14 Nov</option>
+                        <option value="">15 Nov</option>
+                        <option value="">16 Nov</option>
+                        <option value="">17 Nov</option>
+                    </select>
+                    <select name="" id="" class="px-12 py-2 rounded-lg border-2 border-slate-600">
                         <option value="" disabled="" selected="">Select Timing</option>
                         <option value="">Morning(9AM-11AM)</option>
                         <option value="">Evening(3PM-11PM)</option>
                     </select>
-                    <select name="" id="" class="px-12 py-2 rounded-full">>
+                    <select name="" id="" class="px-12 py-2 rounded-lg border-2 border-slate-600">>
                         <option value="" disabled="" selected="">Select Doctor</option>
                         <option value="">Doctor 1</option>
                         <option value="">Doctor 2</option>
@@ -93,7 +100,7 @@
                     </select>
                 </div>    
             </div>
-            <button class="bg-indigo-700 w-80 p-2 font-semibold text-white rounded-full hover:bg-indigo-900 self-center">Submit</button>     
+            <button class="bg-indigo-700 w-80 p-2 font-semibold text-white rounded-lg hover:bg-indigo-900 self-center">Submit</button>     
         </form>
 
     </div>
